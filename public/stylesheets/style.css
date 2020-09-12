@@ -1,0 +1,54 @@
+.profile-img-1 {
+    width: 100%;
+    height: 300px;
+    background: url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.profile-img-2 {
+    width: 100%;
+    height: 300px;
+    background: url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.profile-img-3 {
+    width: 100%;
+    height: 300px;
+    background: url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#btn-control button {
+    margin-right: 20px;
+}
+
+#result-control {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+#result-control p {
+    margin: 0;
+    padding: 8px 0px;
+}
+
+@media screen and (max-width: 575px) {
+    #btn-control {
+        display: block;
+        margin: 10px auto;
+    }
+    #btn-control button {
+        margin-right: 0px;
+        width: 500px;
+        font-size: 42px;
+    }
+    #result-control p {
+        margin: 0px;
+        text-align: center;
+        font-size: 36px;
+    }
+}

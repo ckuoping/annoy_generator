@@ -1,0 +1,70 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="title">
+        <h1 class="text-center">你想對誰說幹話</h1>
+      </div>
+    </div>
+  </div>
+
+  <form method="POST" action="/">
+    <div class="row">
+
+      <div class="card col-sm-4 col-12 px-0" style="width: 18rem;">
+        <div class="profile-img-1 ">
+        </div>
+        <div class="form-check text-center py-3">
+          <input class="form-check-input" type="radio" name="jobRole" id="exampleRadios1" value="eng"
+            {{#ifEquals options.jobRole "eng"}} checked {{/ifEquals}}>
+          <label class="form-check-label" for="exampleRadios1">
+            工程師
+          </label>
+        </div>
+      </div>
+
+      <div class="card col-sm-4 col-12 px-0" style="width: 18rem;">
+        <div class="profile-img-2 ">
+        </div>
+        <div class="form-check text-center py-3">
+          <input class="form-check-input" type="radio" name="jobRole" id="exampleRadios1" value="des"
+            {{#ifEquals options.jobRole "des"}} checked {{/ifEquals}}>
+          <label class="form-check-label" for="exampleRadios1">
+            設計師
+          </label>
+        </div>
+      </div>
+
+      <div class="card col-sm-4 col-12 px-0" style="width: 18rem;">
+        <div class="profile-img-3 ">
+        </div>
+
+        <div class="form-check text-center py-3">
+          <input class="form-check-input" type="radio" name="jobRole" id="exampleRadios1" value="ent"
+            {{#ifEquals options.jobRole "ent"}} checked {{/ifEquals}}>
+          <label class="form-check-label" for="exampleRadios1">
+            企業家
+          </label>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row py-5 d-flex align-items-center justify-content-end">
+
+      <div id="btn-control" class="">
+        <button class="btn btn-primary" type="submit">幹話產生</button>
+      </div>
+
+      <div id="result-control" class="col-12 col-sm-8">
+        {{#if complaint}}
+        <p>{{complaint}}</p>
+        {{else}}
+        <p>點擊按鈕以產生幹話</p>
+        {{/if}}
+      </div>
+    </div>
+
+  </form>
+
+
+</div>
